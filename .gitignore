@@ -1,0 +1,14 @@
+pm_to_blib
+blib
+tmp
+Image-LibExif-*
+tmp/
+!tmp/*.pl
+*.o
+LibExif.c
+LibExif.bs
+Makefile
+Makefile.old
+MANIFEST.bak
+core
+!dist/*
