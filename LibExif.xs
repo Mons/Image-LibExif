@@ -94,10 +94,15 @@ image_exif(src)
 		for (k = 0; k < EXIF_IFD_COUNT; k++) {
 			content = data->ifd[k];
 			if (!content) continue;
+			//warn("Reading IFD %d\n",k);
 			for (l = 0; l < content->count; l++) {
 				entry = content->entries[l];
-				const char *tagname = exif_tag_get_name(entry->tag);
-				(void) hv_store(rv, tagname, strlen(tagname), my_exif_get_value(entry,o), 0 );
+				const char *tagname = exif_tag_get_name_in_ifd(entry->tag,k);
+				const SV * tagval = my_exif_get_value(entry,o);
+				//if (memcmp(tagname,"GPS",3) == 0) {
+				//	warn("\tStore tag %04x (%s) with value %s\n",entry->tag,tagname,SvPV_nolen(tagval));
+				//}
+				(void) hv_store(rv, tagname, strlen(tagname), tagval, 0 );
 			}
 		}
 		if (data->size && data->data) {

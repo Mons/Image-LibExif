@@ -4,7 +4,7 @@ use 5.006002;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub import {
 	my $me = shift;
@@ -61,7 +61,7 @@ image_exif
 
 =head1 AUTHOR
 
-Mons Anderson <<<mons@cpann.org>>>
+Mons Anderson <<<mons@cpan.org>>>
 
 =head1 COPYRIGHT AND LICENSE
 

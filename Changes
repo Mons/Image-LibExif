@@ -1,5 +1,8 @@
 Revision history for Perl extension Image::LibExif.
 
+0.02	Fri Oct 29 17:27:12 2010
+		Correct name extraction by section.
+
 0.01	Thu Oct 21 02:03:36 2010
 		Initial revision.
 
