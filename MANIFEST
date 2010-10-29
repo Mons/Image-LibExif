@@ -11,6 +11,7 @@ t/00-load.t
 t/01-check.t
 t/02-export-all.t
 t/03-export-one.t
+t/04-GPS.t
 t/images/Canon.jpg
 t/images/Canon1DmkIII.jpg
 t/images/Casio.jpg
