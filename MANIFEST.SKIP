@@ -33,6 +33,7 @@
 ^dist/
 ^makeall\.sh$
 ^tmp/
+^src/
 ^Image-LibExif-.*
 ^run\.pl$
 ^\w+\.pl$

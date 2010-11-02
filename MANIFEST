@@ -1,5 +1,5 @@
 Changes
-inc/Devel/CheckLib.pm
+inc/ExtUtils/PkgConfig.pm
 lib/Image/LibExif.pm
 LibExif.xs
 Makefile.PL
