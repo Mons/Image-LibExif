@@ -22,4 +22,5 @@ WriteMakefile(
 	DEFINE            => '', # e.g., '-DHAVE_SOMETHING'
 	INC               => '-I. '.$include, # e.g., '-I. -I/usr/include/other'
 	CCFLAGS           => $cflags,
+	META_ADD          => { license => 'perl' },
 );
